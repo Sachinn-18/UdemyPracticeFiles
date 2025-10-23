@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX ATTRIBUTES</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0px;
+            padding:0px;
+        }
+        .container{
+            height:100vh;
+            display:flex;
+            flex-direction: column;
+            margin:25px;
+            padding:0px;
+        }
+        .flexbox{
+            background-color:rgb(151, 165, 172);
+            padding-left:8px;
+            margin:5px;
+            border: none;
+            border-radius: 8px;
+            display:flex;
+            flex-direction: column;
+        }
+        .box{
+            padding:0px;
+            margin:0px;
+            margin-bottom: 5px;
+            display: flex;
+            
+        }
+        .square{
+            margin:5px;
+            padding:5px;
+            height:50px;
+            width:50px;
+            border-radius:2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+        }
+        .square1{
+            background-color: #ff6666;
+        }
+        .square2{
+            background-color: #66ff66;
+        }
+        .square3{
+            background-color: #6666ff;
+        }       
+        .square4{
+            background-color: #ffff66;
+        }
+        .square5{
+            background-color: #ff66ff;
+        }
+        .square6{
+            background-color: #66ffff;
+        }
+        .square7{
+            background-color: #ff9966;
+        }   
+        .square8{
+            background-color: #99ff66;
+        }
+        .square9{
+            background-color: #6699ff;
+        }
+        .square10{
+            background-color: #ff6699;
+        }
+        .b2{
+            display: flex;
+            flex-direction: column;
+        }
+        .b4{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .b5{
+            display: flex;
+            justify-content: center;
+            justify-content:end;
+        }
+        .b6
+        {
+              display: flex;
+              flex-direction: column;
+              align-items:center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">  
+
+        <div class="flexbox" >
+            <h1>Flexbox Default</h1>
+            <div class="box b1">
+                <div class="square square1">1</div>
+                <div class="square square2">2</div>
+                <div class="square square3">3</div>
+                <div class="square square4">4</div>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <h1>Flexbox Column</h1>
+            <div class="box b2">
+                <div class="square square1">1</div>
+                <div class="square square2">2</div>
+                <div class="square square3">3</div>
+                <div class="square square4">4</div>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <h1>Flexbox Row</h1>
+            <div class="box b3">
+                <div class="square square1">1</div>
+                <div class="square square2">2</div>
+                <div class="square square3">3</div>
+                <div class="square square4">4</div>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <h1>Flexbox Wrap</h1>
+            <div class="box b4">
+                <div class="square square1">1</div>
+                <div class="square square2">2</div>
+                <div class="square square3">3</div>
+                <div class="square square4">4</div>
+                <div class="square square5">5</div>
+                <div class="square square6">6</div>
+                <div class="square square7">7</div>
+                <div class="square square8">8</div>
+                <div class="square square9">9</div>
+                <div class="square square10">10</div>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <h1>Justify Content</h1>
+            <div class="box b5">
+                <div class="square square1">1</div>
+                <div class="square square2">2</div>
+                <div class="square square3">3</div>
+                <div class="square square4">4</div>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <h1>Align Items</h1>
+            <div class="box b6">
+                <div class="square square1">1</div>
+                <div class="square square2">2</div>
+                <div class="square square3">3</div>
+                <div class="square square4">4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
