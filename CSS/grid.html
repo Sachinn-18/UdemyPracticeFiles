@@ -7,19 +7,14 @@
     <style>
         body
         {   
-            height: 100vh;
             margin:0px;
             padding:0px;
             font-family:Arial, Helvetica, sans-serif ;
         }
         .container
         {
-            margin:0px;
+            margin-bottom:5px;
             padding:0px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
 
         }
         .grid-container
@@ -29,7 +24,6 @@
             padding:8px;
             border: 2px solid black;
             border-radius: 4px;
-            width:60vh;
         }
         .gc{
             display: grid;
@@ -85,19 +79,17 @@
         </div>
         <div class="grid-container">
             <h1>Grid Item 3</h1>
-            <div class="gc b3">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-            <div class="item">5</div>
-            <div class="item">6</div>
+            <div class="gc b3" style="grid-template-areas:'header header header' 'side main main''footer footer footer'";>
+            <div class="item" style ="grid-area:header";>Header</div>
+            <div class="item" style="grid-area:main";>Main Content</div>
+            <div class="item" style="grid-area:side";>Side</div>
+            <div class="item" style="grid-area:footer">Footer</div>
             </div>
         </div>
 
         <div class="grid-container">
             <h1>Grid Item 4</h1>
-            <div class="gc b4">
+            <div class="gc b4" style="grid-template-columns: repeat(auto-fit,minmax(100px,1fr))">
             <div class="item">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
@@ -109,29 +101,19 @@
         <div class="grid-container">
            
             <h1>Grid Item 5</h1>
-            <div class="gc b5">
+            <div class="gc b5" style="grid-template-columns: 1fr 2fr;">
             <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-            <div class="item">5</div>
-            <div class="item">6</div>
+            <div class="gc b5" style="grid-template-columns: repeat(2,1fr)">
+            <div class="item" style="background-color: aquamarine;">2</div>
+            <div class="item" style="background-color: aquamarine;">2.1</div>
+            <div class="item" style="background-color: aquamarine;">2.2</div>
+            <div class="item" style="background-color: aquamarine;">2.3</div>
+            </div>
             </div>
         </div>
-        <div class="grid-container">
-            
-            <h1>Grid Item 6</h1>
-            <div class="gc b6">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-            <div class="item">5</div>
-            <div class="item">6</div>
-            </div>
+
         </div>
         </div>
     </div>
-    
 </body>
 </html>
